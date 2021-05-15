@@ -1,0 +1,27 @@
+{
+  "name": "auto-readme",
+  "version": "1.0.0",
+  "description": "A program to auto-generate a readme file for your project.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wadep23/auto-readme.git"
+  },
+  "keywords": [
+    "readme",
+    "auto",
+    "generate"
+  ],
+  "author": "Wade Facer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wadep23/auto-readme/issues"
+  },
+  "homepage": "https://github.com/wadep23/auto-readme#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
