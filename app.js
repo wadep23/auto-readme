@@ -8,49 +8,49 @@ const questions = [];
 inquirer
     .prompt([
         {
-            type: "input",
-            message: "What is the title of your project?",
-            name: "title"
+            type: 'input',
+            name: 'title',
+            message: 'What is the title of your project?'
         },
         {
-            type: "input",
-            message: "Enter a description for your project:",
-            name: "description"
+            type: 'input',
+            name: 'description',
+            message: 'Enter a description for your project:'
         },
         {
-            type: "input",
-            message: "Enter installation instructions:",
-            name: "install"
+            type: 'input',
+            name: 'install',
+            message: 'Enter installation instructions:'
         },
         {
-            type: "input",
-            message: "Enter usage information for your project:",
-            name: "usage"
+            type: 'input',
+            name: 'usage',
+            message: 'Enter usage information for your project:'
         },
         {
-            type: "input",
-            message: "Enter collaborators, include links to their Github profiles:",
-            name: "contribution"
+            type: 'input',
+            name: 'contribution',
+            message: 'Enter collaborators, include links to their Github profiles:'
         },
         {
-            type: "list",
-            message: "Which license does this project fall under?",
-            name: "license",
+            type: 'list',
+            name: 'license',
+            message: 'Which license does this project fall under?',
             choices: [
-                "MIT License",
-                "ISC",
-                "Apache License, Version 2.0",
-                "GNU license, GNU GPLv3",
-                "GNU GPLv2",
-                "GNU AGPLv3",
-                "GNU LGPLv3",
-                "Mozilla Public License 2.0 (MPL 2.0)",
-                "Boost Software License 1.0"
+                'True open source, MIT License',
+                'ISC',
+                'Apache License, Version 2.0',
+                'GNU license, GNU GPLv3',
+                'GNU GPLv2',
+                'GNU AGPLv3',
+                'GNU LGPLv3',
+                'Mozilla Public License 2.0 (MPL 2.0)',
+                'Boost Software License 1.0'
             ]
         }
     ])
     .then((res) => {
-        console.log("Creating README file...");
+        console.log('Creating README file...');
         createREADMEFile(res);
         
     })
