@@ -51,7 +51,7 @@ const renderLicenseSection = (data) => {
     if (!data.license){
         return '';
     }
-    return `##License
+    return `## License
 
 '${data.license}'
 
