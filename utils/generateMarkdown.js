@@ -53,11 +53,11 @@ const renderLicenseSection = (data) => {
     }
     return `##License
 
-    ${data.license}
+'${data.license}'
 
-    ${renderLicenseBadge(data)}
+${renderLicenseBadge(data)}
 
-    ${renderLicenseLink(data)}`
+${renderLicenseLink(data)}`
     
 };
 
