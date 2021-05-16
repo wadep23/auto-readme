@@ -71,34 +71,32 @@ const generateMarkdown = (data, err) => {
         
         return `# ${data.title}
         
-        ##Description
+    ## Description
         
-        ${data.description}
+    ${data.description}
         
-        ##Table of Contents
+    ## Table of Contents
         
-        *[Installation](#installation)
-        *[Usage](#usage)
-        *[Credits](#credits)
-        *[License](#license)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Credits](#credits)
+    * [License](#license)
         
-        ## Installation
+    ## Installation
         
-        ${data.install}
+    ${data.install}
         
-        ## Usage
+    ## Usage
         
-        ${data.usage}
+    ${data.usage}
         
-        ## Credits
+    ## Credits
         
-        ${data.credits}
+    ${data.credits}
+                        
+    ${renderLicenseSection(data)}
         
-        ##License
-        
-        ${renderLicenseSection(data)}
-        
-        `;
+    `;
     }
     
     module.exports = generateMarkdown
