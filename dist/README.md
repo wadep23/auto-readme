@@ -23,7 +23,7 @@ Initiate app from terminal with 'node app' keyphrase. Follow prompts to provide 
         
 N/A
                         
-##License
+## License
 
 'MIT'
 
