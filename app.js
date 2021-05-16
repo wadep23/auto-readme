@@ -57,6 +57,22 @@ inquirer
     .catch((err) => {
         console.log(err);
     })
+let readmeTitle;
+let readmeDescription;
+const descriptionHeading = '## Description';
+let tableOfContents;
+const tableOfContentsHeading = '## Table of Contents';
+let installArr;
+const installHeading = '## Installation';
+let readmeUsage;
+const usageHeading = '## Usage';
+let readmeContribution;
+const contributionHeading = '## Contribution';
+let readmeLicence = input.license;
+const licenseHeading = '## License';
+let readmeQuestions;
+const questionsHeading = '## Questions';
+let completeREADME = [];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
