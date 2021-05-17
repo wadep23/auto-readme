@@ -33,7 +33,7 @@ https://choosealicense.com/licenses/mit/
         
 ## Contributing
 
-Please reach out to my via my github or email for contributions.
+Please reach out to me via my github or email for contributions.
 
 ## Questions
 
