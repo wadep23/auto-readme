@@ -1,8 +1,6 @@
 // // TODO: Create a function that returns a license badge based on which license is passed in
 // // If there is no license, return an empty string
 
-// const { cpuUsage } = require("node:process");
-
 const renderLicenseBadge = (data) => {
 
     if (!data.license){
@@ -96,7 +94,18 @@ ${data.credits}
                         
 ${renderLicenseSection(data)}
         
-    `;
-    }
+## Contributing
+
+${data.contribute}
+
+## Questions
+
+Please reach out with any further questions regarding this application, general questions or potential collaboration opportunities.
+
+Github: ${data.github}
+[Visit my Github](https://www.github.com/${data.github})
+
+Email: ${data.email}`;
+}
     
     module.exports = generateMarkdown

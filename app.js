@@ -47,21 +47,58 @@ const promptUser = () => {
             type: 'input',
             name: 'credits',
             message: 'Enter collaborator info here.'
-        },
+        },        
         {
             type: 'list',
             name: 'license',
             message: 'What license would you like for your project',
             choices: ['Apache License 2.0', 'GNU GPL v3', 'MIT', 'ISC', 'Mozilla Public License 2.0', 'Boost Software License 1.0']
+        },
+        {
+            type: 'input',
+            name: 'contribute',
+            message: 'How can someone contribute to your project?'
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'What is your Github username?'
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please provide an email address where you may be contacted with questions.'
         }
+        // {
+        //     type: 'confirm',
+        //     name: 'moreInfo',
+        //     message: 'Would you like to provide additional information?'            
+        // }
+        // add more questions, be sure to add them to template
     ])
     .then(data => {
-        console.log('=================');
-        console.log(data.license);
         return (data);
         
     })
 };
+
+// const additionalInfo = data => {
+//     if (moreInfo == true){
+//         return inquirer.prompt([
+//             {
+//                 type: 'input',
+//                 name: 'features',
+//                 message: 'Include all features of your project'
+//             },
+//             {
+//                 type: 'input',
+//                 name: 'contributing',
+//                 message: 'How can users contact you regarding contributing to your project?'
+//             }
+//         ])
+//     }
+        
+// }
 
 // TODO: Create a function to write README file
 const writeToFile = (fileName, data) => {
@@ -85,6 +122,7 @@ const writeToFile = (fileName, data) => {
 // TODO: Create a function to initialize app
 const init = () => {
     promptUser()
+        // .then (additionalInfo)
         .then(data => {
             return generateMarkdown(data);            
         })
