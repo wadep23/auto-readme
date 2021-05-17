@@ -44,6 +44,6 @@ Github: wadep23
 
 Email: wadepfacer@gmail.com
 
-### Link to youtube demonstration of application
+### Videos
 
 [Link to video demonstration of application](https://youtu.be/Ts24kZotkYk)
