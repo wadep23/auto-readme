@@ -1,8 +1,8 @@
-# Auto-README
+# q
         
 ## Description
         
-This node based application was designed to help developers create a README.md file for their project by utilizing terminal based prompts.
+q
         
 ## Table of Contents
         
@@ -13,22 +13,22 @@ This node based application was designed to help developers create a README.md f
         
 ## Installation
         
-Step 1. Download app, it's that simple. Make sure to run npm install to download needed dependency files.
+q
         
 ## Usage
         
-Initiate app from terminal with 'node app' keyphrase. Follow prompts to provide information to populate fields in finished README file. Copy finished file contents into your README.md file.
+q
         
 ## Credits
         
-N/A
+q
                         
 ## License
 
-'MIT'
+'Apache License 2.0'
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-https://choosealicense.com/licenses/mit/
+https://choosealicense.com/licenses/apache-2.0/
         
     
